@@ -1,0 +1,54 @@
+.header{
+    position: sticky;
+    top: 0;
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.logo{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding-left: 40px;
+    background-color: black;
+    font-family: 'Rowdies', cursive;   
+    font-weight: 700; 
+}
+
+link{
+    text-decoration: none;
+}
+
+.header-links{
+    display: flex;
+}
+
+.header-links ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+.header-links ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+    padding: 0 15px;
+    background-color: black;
+    font-family: 'Rowdies', cursive; 
+    font-weight: 400;
+}
+
+.header-links ul li a:hover{
+    color: blanchedalmond;
+}
+
+.fab{
+    background-color: black;
+}
+

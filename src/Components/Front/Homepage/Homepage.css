@@ -1,0 +1,23 @@
+.homepage{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: aliceblue;
+        padding-left: 40px;
+        background-color: black;
+        height: 700px;
+        width: 100%;
+        font-family: 'Rowdies', cursive;   
+        font-weight: 700; 
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: color-change 2s infinite;
+}
+
+
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+  }
