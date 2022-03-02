@@ -4,17 +4,17 @@ import Product from '../Products/Product';
 import Homepage from '../Homepage/Homepage';
 import Cart from '../Cart/Cart';
 
-const Routes = ({productItems}) => {                      {/* Importing productItems as props */}
+const Routes = ({productItems, cartItems, handleAddProduct}) => {                      {/* Importing productItems and cartItems as props */}
   return <div>
       <Switch>
         <Route path="/" exact>                              
-            <Product productItems={productItems}/>            {/* Passing productItems as props to the Products component */}
+            <Product productItems={productItems} handleAddProduct={handleAddProduct}/>            {/* Passing productItems as props to the Products component */}
         </Route>
         <Route path="/home" exact>                              
             <Homepage />           
         </Route>
         <Route path="/cart" exact>                              
-            <Cart />           
+            <Cart cartItems={cartItems} handleAddProduct={handleAddProduct}/>                    {/* Passing cartItems as props to the Products component */}
         </Route>
       </Switch>
   </div>;

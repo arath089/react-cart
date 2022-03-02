@@ -1,7 +1,7 @@
 import React from 'react';
 import "./product.css"
 
-const Product = ({productItems}) => {
+const Product = ({productItems, handleAddProduct}) => {
   return (
 
 //Map funtion will create a new array from the existing array and will 
@@ -25,7 +25,11 @@ const Product = ({productItems}) => {
                 </div>
 
                 <div className="button-wrapper">
-                    <button className="product-add-button"> Add to Cart </button>
+                    <button 
+                    className="product-add-button" 
+                    onClick={() => handleAddProduct(productItem)}> 
+                        Add to Cart 
+                    </button>
                 </div>
             </div>
         ))}
