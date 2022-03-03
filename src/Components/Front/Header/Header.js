@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import "./Header.css";
 
 
-const Header = () => {
+const Header = ({cartItems}) => {
   return (
       <header className="header">
           <div>
@@ -27,7 +27,10 @@ const Header = () => {
               <ul>
                   <li>
                       <Link to="/cart" className="cart">
-                        <i class="fab fa-opencart"></i>
+                        <i className="fab fa-opencart"></i>
+                        <span className='cart-length'>
+                            {cartItems.length === 0 ? "" : cartItems.length}
+                        </span>
                       </Link>
                   </li>
               </ul>

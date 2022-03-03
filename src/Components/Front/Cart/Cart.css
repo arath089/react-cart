@@ -1,0 +1,119 @@
+.cart-items{
+    margin: 30px auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 749px){
+    .cart-items{
+        width: 100%;
+    }
+}
+
+.cart-items-header{
+    font-size: 75px;
+    font-family: 'Rowdies', cursive;   
+}
+
+.cart-items-empty{
+    font-size: 32px;
+    font-family: 'Rowdies', cursive; 
+    margin: 100px 0;
+}
+
+.cart-item-container{
+    width: 100%;
+    margin: 20px 0; 
+}
+
+.cart-items-list{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 15px 0;
+    background-color: #e7d5c2; 
+    border: 4px solid black;
+    transition: 0.2s;
+    box-shadow: 15px 20px #b8b8b8;
+}
+
+.cart-items-image{
+    height: auto;
+    max-width: 150px;
+    margin-left: 5px;
+}
+
+.cart-info-wrapper, .cart-items-name,.cart-items-functions,.cart-items-price{
+    background-color: #e7d5c2; 
+}
+
+.cart-info-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-items-total-price-name{
+    font-size: 40px;
+    font-family: 'Rowdies', cursive; 
+    margin: 100px 100px;
+    position: fixed;
+    top:0;
+    right: 0;
+
+}
+
+@media (max-width: 749px){
+    .cart-items-total-price-name{
+        position: relative;
+        margin: 10px 10px;
+    }
+}
+
+.cart-items-name{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+.cart-items-functions{
+ width: 100px;
+ display: flex;
+ justify-content: space-between;
+ margin: 5px 0;
+}
+
+.cart-items-add, .cart-items-remove{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cart-items-add:active, .cart-items-remove:active{
+    transform: translateY(1.2px);
+}
+
+.cart-items-price{
+    font-size: 25px;
+    font-family: 'Rowdies', cursive; 
+}
+
+.cart-items-total-price{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;    
+}
+
+.clear-cart-btn{
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: #b8b8b8;
+    font-size: 15px;
+    font-family: 'Rowdies', cursive; 
+    padding: 5px 10px;
+}

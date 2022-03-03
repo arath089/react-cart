@@ -52,3 +52,9 @@ link{
     background-color: black;
 }
 
+.cart-length{
+    background-color: black;
+    margin: 3px;
+    font-size: 15px;
+    vertical-align: super;
+}
